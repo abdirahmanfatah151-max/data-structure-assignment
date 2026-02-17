@@ -1,0 +1,183 @@
+GROUP ASSIGNMENT
+
+Data Structures-methods of organizing and storing data so that it can be accessed and modified efficiently.
+Algorithms-step-by-step procedures used to manipulate these data structures to solve real-world problems.
+
+In modern computing systems, operating systems, AI systems, databases and web applications require efficient data structures and algorithms to enhance performance, reliability and scalability.
+
+Classifications of data structures
+Primitive data structures
+non primitive data structures
+linear data structure
+non linear data structure
+
+primitive data structures.-store single values and form the building blocks of all other data structures ....they are fast and memory efficient
+
+
+2.Linear data structures
+a.Array...static linear data structure
+
+applications..image processing, matrices, fixed size data storage
+
+algorithm used...Sorting...a method used to arrange a list or array of elements into a specific order, such as numerical or alphabetical, in a non-decreasing or non-increasing sequence.
+
+b.linked lists They are linear data structures in which elements are stored in non-contagious  memory locations.
+They are dynamic in size.
+They are in forms of:
+a)singly linked lists
+b)doubly linked lists
+c)circular linked lists
+
+a) Singly linked lists
+They travel in only one direction.
+They can be applied in;
+music playlists, browser history, implementing queues and stacks
+b) Doubly linked lists
+Travels in both directions
+They apply in; undo and redo operations, forward and backward browsing ,navigation systems
+c)Circular linked lists
+Last node points back to the start
+They apply in; CPU scheduling,multiplayer games turn system,circular buffers
+
+
+Applications -Dynamic memory management, Playlists, Undo/Redo operations
+
+c.stack ...ie Using Array
+
+
+applications -web page Navigation...Function calls, Expression evaluation, Backtracking algorithms
+
+algorithm used...DFS..depth first search....a fundamental algorithm for traversing or searching tree and graph data structures, exploring as far as possible along each branch before backtracking. Utilizing a stack...or recursion to manage nodes, it systematically visits all reachable vertices by going deep into one path, hitting a dead end, and backtracking, with a time complexity of (O(V+E)).
+
+The notation O(V + E) in the context of the Depth-First Search (DFS) algorithm represents its time complexity, which is a measure of the total time the algorithm takes to run relative to the size of the graph it is traversing.
+O stands for "Big O" notation, which describes the upper bound or worst-case running time of an algorithm.
+V represents the number of vertices (nodes) in the graph.
+E represents the number of edges (connections) in the graph.
+
+d.Queue...Using Array
+
+Application...CPU scheduling, Network buffering, Printer queues
+
+algorithm used....BFS...Breadth-First Search...a graph traversal algorithm that explores nodes level-by-level, starting from a root, by examining all direct neighbors at the current depth before moving to the next level. It uses a queue to manage node exploration, guaranteeing the shortest path in unweighted graphs...
+
+NON-LINEAR DATA STRUCTURES
+Tree....Binary TreeTrees are a fundamental data structure in computer science, and they're used in a wide range of applications. Essentially, a Tree is a hierarchical structure composed of nodes, where each node has a value and zero or more child nodes. There are different types of Trees, including Binary Trees, AVL Trees, and B-Trees, each with its own strengths and use cases.
+
+One of the key benefits of Trees is their efficiency. They allow for fast data retrieval and insertion, making them a popular choice for applications where data is constantly being added or queried. For example, file systems use Trees to organize and manage files and directories, while databases use them to index and query large datasets.
+
+Trees are also used in web development, where the Document Object Model (DOM) is essentially a Tree-like structure. This allows developers to easily navigate and manipulate the HTML elements on a webpage. Additionally, Trees are used in algorithms for tasks such as sorting and searching, where their hierarchical structure can be leveraged to reduce the number of comparisons needed.
+
+Here's an example of a simple Binary Tree implemented in Python:
+class Node:
+    def __init__(self, value):
+        self.left = None
+        self.right = None
+        self.value = value
+
+root = Node(1)
+root.left = Node(2)
+root.right = Node(3)
+This implementation provides a basic structure for creating and manipulating a Binary Tree. From here, you could add methods for inserting and traversing the Tree, or use it as a starting point for more complex Tree-based data structures.
+
+Overall, Trees are a powerful and versatile data structure that's worth understanding. Whether you're working on a small project or a large-scale application, they're likely to come in handy at some point. By understanding how Trees work and how to use them effectively, you can write more efficient and effective code.
+
+applications...File systems, Database indexing, Expression trees
+algorithm used...Traversal algorithm...
+
+
+2. Graph...Adjacency Matrix Representation
+
+
+applications,,,,Social networks, Routing algorithms, Maps and navigation systems...that is in google maps
+
+algorithm used ....Dijkstra
+
+How Data Structures and Algorithms Work Within Systems
+
+1. What Happens Inside a System..
+Every computer system has three main parts which are
+Input
+Processing
+Output
+Data Structures and Algorithms work mainly in the processing stage.Databases: Trees provide fast searching and indexing.
+
+2.Role of Algorithms in a System
+An algorithm is...
+A step-by-step procedure to solve a problem.
+In systems, algorithms...
+Search data
+Sort data
+Insert/Delete data
+Calculate results
+eg..Searching in a System
+If a system stores 1 million students without algorithm it would check each student one by one (slow).With Binary Search Algorithm,Data stored in sorted array,hence Search time becomes very fast Using divide and conquer method
+That’s how systems remain efficient. in Compilers, Trees represent program structure.
+3.How They Work in Memory.In computer memory,RAM stores data structures.
+Example
+If you create an array,Memory allocated continuously
+If you create linked list,Memory allocated dynamically
+Nodes stored in different locations
+So systems choose data structures depending on:
+Memory efficiency,Speed,Flexibility
+
+4.Real System Examples
+A. Google Search Engine
+Data Structures:Trees,Graphs
+Algorithms:Ranking algorithms,Search algorithms
+How it works:
+Webpages stored in structured form
+Search algorithm finds relevant pages
+Results ranked and displayed
+B. WhatsApp
+Data Structures:Queue (message delivery),Graph (contacts network)
+Algorithms:Encryption algorithm,Message routing
+How it works:
+Message stored in queue,Routed through servers,Delivered in order (FIFO)
+C. Operating System
+Data Structures:Queue (CPU scheduling),Stack (function calls)
+Algorithms:Scheduling algorithms,Memory allocation algorithms
+Example: When multiple programs are running,They are placed in a queue
+OS schedules them one by one
+
+Giving Real Applications Using Data Structures + Algorithms
+1. Google Maps
+Data Structure... Graph
+Algorithm...Dijkstra’s Algorithm
+Use... Finding shortest routes
+Reason..Finds the fastest and shortest path between two places.
+
+2. Web Browsers
+Data Structure... Stack
+Algorithm ...Undo / Back Algorithm
+Use..Back and forward navigation
+Reason...Last opened page is accessed first (LIFO).
+
+3. Operating System
+Data Structure..Queue
+Algorithm.. Round Robin Scheduling
+Use.. CPU process scheduling
+Reason.. Executes processes in order of arrival (FIFO).
+
+4. Text Editors
+Data Structure.. Stack
+Algorithm.. Undo/Redo
+Use.. Undo and redo typing actions
+Reason.. Easily reverses last action.
+
+4. Text Editors
+Data Structure... Stack
+Algorithm... Undo/Redo
+Use...Undo and redo typing actions
+Reason... Easily reverses last action.
+
+5. Databases
+Data Structure... Tree
+Algorithm... Binary Search
+Use...Fast searching of records
+Reason....Speeds up data searching.
+
+6. Social Media
+Data Structure... Graph
+Algorithm...Breadth First Search (BFS)
+Use... Friend suggestions
+Reason... Finds mutual connections.
