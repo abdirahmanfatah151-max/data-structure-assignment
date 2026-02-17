@@ -1,12 +1,4 @@
 /*
-Author: Silvester Ngari Ngondi
-Reg No.: BSCCS/2025/41718
-Course: BIT 2203 – Data Structures and Algorithms
-Assignment: Data Structures Implementation in C
-Date: 15-Feb-2026
-*/
-
-/*
 Linked List Example
 Real-life applications:
 - Spotify playlists (songs can be added, removed, reordered)
@@ -44,3 +36,4 @@ int main() {
 
     return 0;
 }
+
